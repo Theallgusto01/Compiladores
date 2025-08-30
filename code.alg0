@@ -1,0 +1,25 @@
+int x = 1;
+int y = 2;
+int z = x + y;
+
+dec a = 3.14;
+dec b = 2.5;
+dec c = a * b;
+
+log ativo = true;
+log concluido = false;
+
+int resultado = 0;
+
+if (x == y) {
+    resultado = 10;
+} else if (a > b && ativo == true) {
+    resultado = 20;
+} else if (c < 10 || concluido == false) {
+    resultado = 30;
+} else {
+    resultado = 40;
+}
+
+int contador = 5;
+contador = contador + 1;
