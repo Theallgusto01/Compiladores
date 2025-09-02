@@ -7,7 +7,9 @@
 
 DIG [0-9]+
 CHAR [a-zA-Z]+
-IGNORE [ \n\t]
+IGNORE [' '\s\n\t]+
+DELIMITADOR [\{\}\[\]\(\)]
+EOL [\;]
 
 
 %%
@@ -32,8 +34,9 @@ IGNORE [ \n\t]
 "&&" {printf("OPERADOR LOGICO: AND | %s\n", yytext);}
 "||" {printf("OPERADOR LOGICO: OR | %s\n", yytext);}
 
-";" {printf("DELIMITADOR | %s\n", yytext);}
-
+{DELIMITADOR} {printf("DELIMITADOR | %s\n", yytext);}
+{EOL} {printf("FIM DE LINHA | %s\n", yytext);}
+{IGNORE} {}
 "=" {printf("ATRIBUICAO: | %s\n", yytext);}
 
     /*ESTRUTURAS*/
