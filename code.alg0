@@ -1,25 +1,64 @@
-int x = 1;
-int y = 2;
-int z = x + y;
+// Comentários de linha e bloco
+INT a = 15;
+INT b = 3;
+DEC c = 7.5;
+DEC d = 2.5;
+LOG flag = false;
+CAR letra1 = 'Z';
+CAR letra2 = 'ç';
 
-dec a = 3.14;
-dec b = 2.5;
-dec c = a * b;
+string1 = "Olá Mundo!";
+string2 = "Teste com acentuação: áéíóú";
 
-log ativo = true;
-log concluido = false;
+// Operações aritméticas e combinação
+resultado1 = a + b * 2 - 5 / 2 % 3;
+resultado2 = c / d + a - b;
 
-int resultado = 0;
-
-if (x == y) {
-    resultado = 10;
-} else if (a > b && ativo == true) {
-    resultado = 20;
-} else if (c < 10 || concluido == false) {
-    resultado = 30;
+// Teste lógico simples
+if (a > b && flag == false) {
+    ESCREVA("Condição 1 verdadeira");
 } else {
-    resultado = 40;
+    ESCREVA("Condição 1 falsa");
 }
 
-int contador = 5;
-contador = contador + 1;
+// Teste lógico com else if
+if (c < d || a == 15) {
+    ESCREVA("Condição 2 verdadeira");
+} else if (flag == true) {
+    ESCREVA("Condição 2 alternativa");
+} else {
+    ESCREVA("Condição 2 final");
+}
+
+// Laço for com incremento
+for (i = 0; i < 5; i = i + 1) {
+    ESCREVA("Iteração do for: ");
+    ESCREVA(i);
+}
+
+// Laço for com decremento
+for (j = 10; j > 0; j = j - 2) {
+    ESCREVA("Contagem regressiva: ");
+    ESCREVA(j);
+}
+
+// Teste de booleanos e operadores lógicos
+LOG resultado_logico = (a == 15 && b < 5) || flag;
+if (resultado_logico == true) {
+    ESCREVA("Resultado lógico verdadeiro");
+} else {
+    ESCREVA("Resultado lógico falso");
+}
+
+// Teste de caracteres e strings
+ESCREVA("Letra inicial: ");
+ESCREVA(letra1);
+ESCREVA("Letra acentuada: ");
+ESCREVA(letra2);
+ESCREVA(string1);
+ESCREVA(string2);
+
+// Teste de expressões complexas
+resultado3 = ((a + b) * (c - d) / 2) % 4 + 1;
+ESCREVA("Resultado complexo: ");
+ESCREVA(resultado3);
