@@ -3,4 +3,4 @@ all: anal.l
 	flex -i anal.l
 	gcc lex.yy.c -o out -lfl
 	./out > out.txt
-	python generate_symbol_table.py
+	python3 generate_symbol_table.py
