@@ -1,6 +1,6 @@
-all: anal.l
+all: anal.l sintatico.y
 	clear
 	flex -i anal.l
-	gcc lex.yy.c -o out -lfl
-	./out > out.txt
-	python3 generate_symbol_table.py
+	bison -d sintatico.y
+	gcc sintatico.tab.c lex.yy.c -o MeuPrimeiroCompilador -lfl -lm
+	./MeuPrimeiroCompilador

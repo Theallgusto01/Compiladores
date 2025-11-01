@@ -1,64 +1,29 @@
-// Comentários de linha e bloco
-INT a = 15;
-INT b = 3;
-DEC c = 7.5;
-DEC d = 2.5;
-LOG flag = false;
-CAR letra1 = 'Z';
-CAR letra2 = 'ç';
+inicio
 
-string1 = "Olá Mundo!";
-string2 = "Teste com acentuação: áéíóú";
+// Comentário de linha simples
+/* Comentário
+   de bloco
+*/
 
-// Operações aritméticas e combinação
-resultado1 = a + b * 2 - 5 / 2 % 3;
-resultado2 = c / d + a - b;
+escreva("=== CALCULADORA DE MÉDIA ===");
 
-// Teste lógico simples
-if (a > b && flag == false) {
-    ESCREVA("Condição 1 verdadeira");
-} else {
-    ESCREVA("Condição 1 falsa");
-}
+escreva("Digite a primeira nota: ");
+leia(a);
 
-// Teste lógico com else if
-if (c < d || a == 15) {
-    ESCREVA("Condição 2 verdadeira");
-} else if (flag == true) {
-    ESCREVA("Condição 2 alternativa");
-} else {
-    ESCREVA("Condição 2 final");
-}
+escreva("Digite a segunda nota: ");
+leia(b);
 
-// Laço for com incremento
-for (i = 0; i < 5; i = i + 1) {
-    ESCREVA("Iteração do for: ");
-    ESCREVA(i);
-}
+/* Cálculo da média */
+c = (a + b) / 2;
 
-// Laço for com decremento
-for (j = 10; j > 0; j = j - 2) {
-    ESCREVA("Contagem regressiva: ");
-    ESCREVA(j);
-}
+escreva("Sua média é: ", c);
 
-// Teste de booleanos e operadores lógicos
-LOG resultado_logico = (a == 15 && b < 5) || flag;
-if (resultado_logico == true) {
-    ESCREVA("Resultado lógico verdadeiro");
-} else {
-    ESCREVA("Resultado lógico falso");
-}
+/* Teste de função raiz */
+escreva("A raiz quadrada da média é: ", raiz(c));
 
-// Teste de caracteres e strings
-ESCREVA("Letra inicial: ");
-ESCREVA(letra1);
-ESCREVA("Letra acentuada: ");
-ESCREVA(letra2);
-ESCREVA(string1);
-ESCREVA(string2);
+/* Teste de expressão mais complexa */
+d = (a * 2) + (b * 3) - c / raiz(c);
 
-// Teste de expressões complexas
-resultado3 = ((a + b) * (c - d) / 2) % 4 + 1;
-ESCREVA("Resultado complexo: ");
-ESCREVA(resultado3);
+escreva("Resultado adicional do cálculo: ", d);
+
+fim

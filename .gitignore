@@ -1,3 +1,9 @@
 lex.yy.c
 out
 out.txt
+/bnf/*
+comp.gals
+EXAula/*
+sintatico.tab.c
+sintatico.tab.h
+MeuPrimeiroCompilador
