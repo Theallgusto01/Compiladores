@@ -29,7 +29,8 @@ factor: term
     ;
 
 term: NUMBER
-    | ABS term {$$ = $2 >= 0? $2 : - $2;}
+    | ABS term { $$ = $2 >= 0? $2 : - $2; }
+    | OP exp CP { $$ = $2; }
     ;
 
 %%
